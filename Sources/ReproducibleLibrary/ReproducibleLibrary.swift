@@ -1,1 +1,3 @@
-public var hello = "Hello Reproducible World!"
+public func hello(message: String) -> String{
+    return "Hello " + message
+}
