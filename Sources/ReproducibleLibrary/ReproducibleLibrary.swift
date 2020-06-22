@@ -3,8 +3,12 @@ public func hello(message: String) -> String{
 }
 
 public class ReproLib{
-    public ReproLib()
+    let greeting: String
+    public init(_greeting: String){
+        greeting = _greeting
+    }
+    
     public func hello(message: String) -> String{
-        return "Class says hello " + message
+        return greeting + message
     }
 }
