@@ -3,6 +3,7 @@ public func hello(message: String) -> String{
 }
 
 public class ReproLib{
+    public ReproLib()
     public func hello(message: String) -> String{
         return "Class says hello " + message
     }
