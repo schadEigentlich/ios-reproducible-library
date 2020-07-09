@@ -25,4 +25,7 @@ public class ReproLib2: ReproLib{
         super.init(_greeting: "")
         greeting = _greeting + "!!!"
     }
+    public func hello(number: Int)->String{
+        return greeting + String(number)
+    }
 }
