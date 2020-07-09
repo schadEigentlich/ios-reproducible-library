@@ -22,6 +22,7 @@ public class ReproLib{
 
 public class ReproLib2: ReproLib{
     public override init(_greeting: String){
+        super.init(_greeting: "")
         greeting = _greeting + "!!!"
     }
 }
