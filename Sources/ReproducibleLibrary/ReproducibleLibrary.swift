@@ -14,7 +14,7 @@ public class ReproLib{
         return greeting + message
     }
     
-    public func helloText(message: String)->View{
+    public func helloText(message: String)->Text{
         return Text(message)
     }
     
