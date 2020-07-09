@@ -5,14 +5,13 @@ import PackageDescription
 
 let package = Package(
     name: "ReproducibleLibrary",
-    products: [
+    platforms: [
+        .iOS("13.5"),
+    ], products: [
         // Products define the executables and libraries produced by a package, and make them visible to other packages.
         .library(
             name: "ReproducibleLibrary",
             targets: ["ReproducibleLibrary"]),
-    ],
-        platforms: [
-        .iOS("13.5"),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
