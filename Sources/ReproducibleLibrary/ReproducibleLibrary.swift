@@ -29,3 +29,16 @@ public class ReproLib2: ReproLib{
         return greeting + String(number)
     }
 }
+
+    extension CFString: Hashable {
+        
+        /// Return the hash value of a CFString
+        public var hashValue: Int {
+            return (self as String).hashValue
+        }
+        
+        /// Comparison of CFStrings
+        static public func == (lhs: CFString, rhs: CFString) -> Bool {
+            return lhs as String == rhs as String
+        }
+    }
